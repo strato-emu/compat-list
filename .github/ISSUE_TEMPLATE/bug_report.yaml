@@ -1,0 +1,83 @@
+name: Game Compatibility
+description: Add a new game to the compatibility database
+title: "<Full game name displayed in skyline>"
+labels: ["triage"]
+body:
+  - type: checkboxes
+    attributes:
+      label: Is there an existing issue for this?
+      description: Search to see if an issue already exists for this game
+      options:
+      - label: I have searched the existing issues
+        required: true
+  - type: input
+    id: build
+    attributes:
+      label: Tested Build
+      description: Enter the GitHub Actions build number of the build tested
+      placeholder: #1337
+    validations:
+      required: true
+  - type: dropdown
+    id: androidversion
+    attributes:
+      label: Android Version
+      options:
+      - 13
+      - 12
+      - 11
+      - 10
+    validations:
+      required: true
+  - type: dropdown
+    id: socvendor
+    attributes:
+      label: SoC type
+      options:
+      - Snapdragon
+      - Mediatek
+      - Exynos
+      - Kirin
+      - Tegra
+      - UNISOC
+      - Other
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Custom ROM?
+      description: 'Is a custom ROM such as Lineage OS installed on the device?'
+      options:
+      - label: "Yes"
+        required: true
+  - type: input
+    id: specs
+    attributes:
+      label: "Device GSMArena link"
+      description: "[GSMArena](https://www.gsmarena.com/)"
+      placeholder: "https://www.gsmarena.com/<YOUR DEVICE>"
+    validations:
+      required: true
+  - type: textarea
+    id: behaviour
+    attributes:
+      label: Game Behaviour
+      description: Screenshots and a descripton of what works and what doesn't
+      placeholder: "Mario's left eye is missing <screenshot>"
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Is Log Level is set to 'Info'?
+      description: Log Level  must be set to `Info` for all attached logs
+      options:
+      - label: "Yes"
+        required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: Log file
+      description: Please attach an emulator log file (can be saved with button next to settings)
+    validations:
+      required: true
+
