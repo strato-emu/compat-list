@@ -49,7 +49,6 @@ body:
       description: 'Is a custom ROM such as Lineage OS installed on the device?'
       options:
       - label: "Yes"
-        required: true
   - type: input
     id: specs
     attributes:
