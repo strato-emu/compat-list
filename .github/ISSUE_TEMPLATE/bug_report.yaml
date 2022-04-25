@@ -43,12 +43,6 @@ body:
       - Other
     validations:
       required: true
-  - type: checkboxes
-    attributes:
-      label: Custom ROM?
-      description: 'Is a custom ROM such as Lineage OS installed on the device?'
-      options:
-      - label: "Yes"
   - type: input
     id: specs
     attributes:
