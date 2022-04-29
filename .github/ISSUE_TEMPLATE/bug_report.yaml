@@ -56,7 +56,10 @@ body:
     attributes:
       label: Game Behaviour
       description: Screenshots and a descripton of what works and what doesn't
-      placeholder: "Mario's left eye is missing <screenshot>"
+      placeholder: |
+        "- Mario's left eye is missing <screenshot>"
+        "- Audio is broken"
+        "Screenshots of game: <screenshot>"
     validations:
       required: true
   - type: checkboxes
@@ -70,7 +73,6 @@ body:
     id: log
     attributes:
       label: Log file
-      description: Please attach an emulator log file (can be saved with button next to settings)
+      description: Please attach a zipped emulator log file (can be saved with button next to settings)
     validations:
       required: true
-
