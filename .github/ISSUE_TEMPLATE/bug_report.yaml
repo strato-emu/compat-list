@@ -14,7 +14,7 @@ body:
     id: build
     attributes:
       label: Tested Build
-      description: Enter the GitHub Actions build number of the build tested (For Edge, it should be `Edge-{Version}` E.g. `Edge-3`)
+      description: Enter the GitHub Releases build number of the build tested (It should be `{Version}` E.g. `1.0.0`)
       placeholder: #1337
     validations:
       required: true
