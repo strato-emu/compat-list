@@ -1,4 +1,4 @@
-### [Stratos's](https://github.com/strato-emu/strato) Compatibility List
+### [Strato's](https://github.com/strato-emu/strato) Compatibility List
 A repository with [**GitHub Issues**](https://github.com/strato-emu/compat-list/issues) of Nintendo Switch titles and their corresponding compatibility status with <a href="https://github.com/strato-emu/strato"><b>Strato</b></a>, reporting regressions and progression in a title's status (`nothing`, `boots`, `ingame` or `playable`) alongside tagging them with metadata for efficient retesting and tracking what the most pertinent issues may be for focusing development efforts.
 
 #### How do I contribute?
