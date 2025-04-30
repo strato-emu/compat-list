@@ -23,13 +23,13 @@ body:
     attributes:
       label: Android Version
       options:
-      - 15 Beta
+      - 15
       - 14
       - 13
       - 12
       - 11
       - 10
-      default: 1
+      default: 0
     validations:
       required: true
   - type: dropdown
